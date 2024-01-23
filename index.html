@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steroidify Mail Server v2.7.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        word-wrap: break-word;
+      }
+
+      #container {
+        color: #fff;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo-container {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Desktop Background */
+      @media (min-width: 768px) {
+        body {
+          background: url("images/desktop-bg.jpg") center/cover no-repeat;
+        }
+
+        #container {
+          gap: 0px;
+        }
+
+        .logo-container {
+          top: 100px;
+        }
+
+        #logo {
+          width: 400px;
+          height: auto;
+        }
+
+        .title {
+          margin-top: 100px;
+          font-size: 70px;
+		
+        }
+
+        .version {
+          font-size: 48px;
+        }
+      }
+
+      /* Mobile Background */
+      @media (max-width: 767px) {
+        body {
+          background: url("images/mobile-bg.jpg") center/cover no-repeat;
+        }
+
+        #container {
+          gap: 8px;
+        }
+
+        .logo-container {
+          top: 50px;
+        }
+
+        #logo {
+          width: 300px;
+          height: auto;
+        }
+
+        .title {
+          margin: 0;
+          font-size: 70px;
+        }
+
+        .version {
+          font-size: 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SVG Logo -->
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="Steroidify Logo" id="logo" />
+    </div>
+
+    <!-- Centered Text -->
+    <div id="container">
+      <h1 class="title">Mail Server</h1>
+      <p class="version">v2.7.1</p>
+    </div>
+  </body>
+</html>
+
