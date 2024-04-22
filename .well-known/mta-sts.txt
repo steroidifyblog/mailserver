@@ -1,6 +1,4 @@
 version: STSv1
 mode: testing
-mx: steroidify.info
-mx: em8583.steroidify.info
 mx: o1.sg.steroidify.blog
 max_age: 86400
